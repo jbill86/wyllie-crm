@@ -80,7 +80,7 @@ export default defineConfig({
     define: {
         'process.env': process.env,
     },
-    base: './',
+    base: process.env.VITE_BASE_PATH || "/wyllie.crm",
     esbuild: {
         keepNames: true,
     },
